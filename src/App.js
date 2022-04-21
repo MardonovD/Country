@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+// biz bir componentdan ikkinchi componentaga malumotni uzatmoqchi bolsak propslardan foydalanamiz.
 
+import Component from "./propsTutorial/Component.js";
+import Component2 from "./propsTutorial/Component2.js";
+import Lesson1 from "./stateLesson/Lesson1.js";
+import Counter from "./stateLesson/Counter.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Component name="Doston" age="20" /> */}
+      {/* <Component2  text="React tutorial"/> */}
+      <Lesson1 />
+      <Counter />
     </div>
   );
 }
